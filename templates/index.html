@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Salary Prediction</title>
+</head>
+<body>
+    <h1>Salary Prediction</h1>
+    
+    <form method="post" action="/predict">
+        <label>Experience</label><br>
+        <input type="number" name="experience"><br><br>
+
+        <label>CGPA</label><br>
+        <input type="number" name="cgpa"><br><br>
+
+        <label>Age</label><br>
+        <input type="number" name="age"><br><br>
+
+        <label>Interview Score</label><br>
+        <input type="number" name="Interview_score"><br><br>
+
+        <input type="submit" value="predict"><br><br>
+    
+    {% if result %}
+        <p>{{result}}</p>
+    {% endif %}
+
+
+    </form>
+    </h1>
+</body>
+</html>
